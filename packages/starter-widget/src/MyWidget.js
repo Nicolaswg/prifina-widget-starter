@@ -1,12 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import styled from "styled-components";
 import { usePrifina, Op } from "@prifina/hooks";
-
+import {ActivitySummary} from "@dynamic-data/oura-data/mockups"
 import { Container } from "./components/Container";
 
 // unique appID for the app....
 const appID = "1u3f465t4cNSWYiyKFVwBG";
-
+const ouraData = {...ActivitySummary}
+console.log(ouraData)
 const MyWidget = () => {
   // init hook and get provider api services...
 

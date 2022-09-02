@@ -54,10 +54,10 @@
     "webpack-dev-server": "^3.11.2"
   },
   "peerDependencies": {
+    "@prifina/hooks": "^0.0.62",
     "react": "^17.0.1",
     "styled-components": "^5.2.1",
-    "styled-system": "^5.1.5",
-    "@prifina/hooks": "^0.0.62"
+    "styled-system": "^5.1.5"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production --config config/webpack.config.js",
@@ -67,5 +67,8 @@
   },
   "bugs": {
     "url": "https://github.com/prifina/prifina-widget-starter/issues"
+  },
+  "dependencies": {
+    "@dynamic-data/oura-data": "^0.0.7"
   }
 }
