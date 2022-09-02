@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @chakra-ui/react @emotion/react @emotion/styled framer-motion
+  C:\Program Files\nodejs\node.exe C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
 
 PATH: 
   C:\Users\usuario\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\usuario\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\usuario\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\usuario\AppData\Roaming\npm;C:\Users\usuario\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,16 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.npmjs.org/@icons/material/-/material-0.2.4.tgz: ESOCKETTIMEDOUT
-      at ClientRequest.<anonymous> (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141517:19)
-      at Object.onceWrapper (node:events:627:28)
-      at ClientRequest.emit (node:events:513:28)
-      at TLSSocket.emitRequestTimeout (node:_http_client:814:9)
-      at Object.onceWrapper (node:events:627:28)
-      at TLSSocket.emit (node:events:525:35)
-      at TLSSocket.Socket._onTimeout (node:net:526:8)
-      at listOnTimeout (node:internal/timers:559:17)
-      at processTimers (node:internal/timers:502:7)
+  Invariant Violation: expected workspace package to exist for "babel-plugin-styled-components"
+      at invariant (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:2318:15)
+      at _loop2 (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:91040:9)
+      at PackageHoister.init (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:91099:19)
+      at PackageLinker.getFlatHoistedTree (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:48549:20)
+      at PackageLinker.<anonymous> (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:48560:27)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:328:14
+      at new Promise (<anonymous>)
+      at new F (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:5305:28)
 
 npm manifest: 
   {
