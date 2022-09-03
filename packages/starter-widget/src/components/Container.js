@@ -4,7 +4,6 @@ import { variant } from "styled-system";
 export const Container = styled("div")(
   {
     boxShadow: 0,
-    padding: 0.8,
     borderRadius: 10,
     display: 'flex',
     margin: '20px auto'
