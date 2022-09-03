@@ -63,12 +63,13 @@
     "build": "cross-env NODE_ENV=production webpack --mode production --config config/webpack.config.js",
     "build:dev": "cross-env NODE_ENV=development webpack --mode development --config config/webpack.dev-config.js",
     "start": "yarn build:dev && cross-env NODE_ENV=development webpack serve --config ./config/webpack.dev-config.js",
-    "storybook": "start-storybook -p 9009 -s public"
+    "storybook": "start-storybook -p 9009 -s public",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/prifina/prifina-widget-starter/issues"
   },
   "dependencies": {
-    "@dynamic-data/oura-data": "^0.0.7"
+    "@prifina/oura-data": "^0.0.5"
   }
 }

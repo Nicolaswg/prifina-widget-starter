@@ -5,7 +5,6 @@ const Header = (props) => {
   const { ouraData, userData } = props;
   let img = userData.picture;
   let userName = userData.name;
-  console.log(userName);
   img = { ...img };
   userName = { ...userName };
 
