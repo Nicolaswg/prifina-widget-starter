@@ -4,7 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const Qoutes = (props) => {
-  const {score, rest, no_ring} = props
+  const {score, rest} = props
   const [qoutes, setQoutes] = useState({});
 
   const requestQoutes = async (categorie) => {
@@ -32,12 +32,12 @@ const Qoutes = (props) => {
     width: 100%;
     height: 160px;
     display: flex;
-    background: red;
     justify-content: center;
-    align-item: center;
-    padding: 0.4rem 0.8rem;
+    align-items: center;
     text-align: center;
-
+    background: rgba(255, 242, 200, 0.3);
+    padding: 0.4rem 0.8rem;
+    border-bottom: 2px solid #ddd;
     p {
       height: max-content;
       text-align: center;
@@ -55,7 +55,7 @@ const Qoutes = (props) => {
   return (
     <QoutesWrapper>
       <p>
-        "{qoutes.quote}" .<small>{qoutes.author}</small>
+        "{qoutes.quote}" <small>{qoutes.author}</small>
       </p>
     </QoutesWrapper>
   );
