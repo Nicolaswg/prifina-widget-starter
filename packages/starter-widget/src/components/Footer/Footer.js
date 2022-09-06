@@ -5,7 +5,8 @@ const Footer = (props) => {
   const { score, rest, non_wear, cal_total } = props;
 
   const hoursConverter = (min) => {
-    return min / 60;
+    const hours = min / 60
+    return hours.toFixed(1);
   }
   const FooterWrapper = styled.div`
     display: flex;
@@ -63,7 +64,7 @@ const Footer = (props) => {
         </div>
         <div>
           <div className="dta">
-            <p>{hoursConverter(rest)}</p>
+            <p>{hoursConverter(non_wear)}</p>
             <small>hrs</small>
           </div>
           <small className="dta_text">non wear</small>
