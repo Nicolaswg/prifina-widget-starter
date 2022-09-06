@@ -20,8 +20,9 @@ const Header = (props) => {
     .userPicture {
       width: 65px;
       height: 65px;
-      background: #fff;
+      margin-top: 5px;
       border-radius: 50%;
+      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -45,7 +46,7 @@ const Header = (props) => {
       }
 
       p:nth-child(1) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
       small {
