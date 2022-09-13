@@ -2,12 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Header = (props) => {
-  const { ouraData, userData } = props;
+  const { summary_date, userData } = props;
   let img = userData.picture;
   let userName = userData.name;
   img = { ...img };
   userName = { ...userName };
-
   const NavContainer = styled.section`
     display: flex;
     justify-content: space-evenly;
@@ -61,7 +60,7 @@ const Header = (props) => {
         <img src={img["large"]}></img>
       </div>
       <div className="userInfo">
-        <p>{ouraData.date}</p>
+        <p>{summary_date}</p>
         <p>
           {userName.first} {userName.last}
         </p>

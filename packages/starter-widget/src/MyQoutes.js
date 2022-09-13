@@ -37,9 +37,7 @@ const MyQoutes = () => {
     <Container variant="small" style={{ border: "0.8px solid #ee5522" }}>
       <Wrapper>
         <Header
-          ouraData={{
-            date: summary_date,
-          }}
+          summary_date={summary_date}
           userData={user}
         />
         <Qoutes score={score} rest={rest} />
