@@ -1,19 +1,20 @@
 import React, { useRef, useEffect, useState } from "react";
 import styled from "styled-components";
 import { usePrifina, Op } from "@prifina/hooks";
-import { ActivitySummary } from "@prifina/oura-data/mockups";
+import OURA from "@prifina/oura-data";
 import { Container } from "./components/Container";
 import Header from "./components/Header/Header";
 import Qoutes from "./components/Qoutes/Qoutes";
 import Footer from "./components/Footer/Footer";
 
 // unique appID for the app....
-const appID = "1u3f465t4cNSWYiyKFVwBG";
+const appID = "5iEHz6gTz8QoyfXydUUgzV";
+const {ActivitySummary} = OURA;
 const ouraData = { ...ActivitySummary };
 
-
-const MyWidget = () => {
+const MyQoutes = () => {
   // init hook and get provider api services...
+
   const [user, setUser] = useState({});
   const {summary_date, score, rest, non_wear, cal_total} = ouraData[0];
   const requestRandomUser = async () => {
@@ -25,6 +26,7 @@ const MyWidget = () => {
   useEffect( async () => {
     requestRandomUser();
   }, []);
+
   const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
@@ -47,4 +49,4 @@ const MyWidget = () => {
   );
 };
 
-export default MyWidget;
+export default MyQoutes;

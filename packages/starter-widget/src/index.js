@@ -1,6 +1,6 @@
 /**
  * Entrypoint of the Remote Component.
  */
-import MyWidget from "./MyWidget";
+import MyQoutes from "./MyQoutes";
 
-export default MyWidget;
+export default MyQoutes;
