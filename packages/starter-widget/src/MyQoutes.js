@@ -31,6 +31,8 @@ const MyQoutes = () => {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: #fff;
+    border-radius: 10px;
   `;
 
   return (
